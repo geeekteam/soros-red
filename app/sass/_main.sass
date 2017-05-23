@@ -2,6 +2,12 @@ html, body
 	margin: 0
 	height: 100%
 
+body
+	font-family: "Open Sans", sans-serif
+	font-size: 16px
+	font-weight: normal
+	font-style: normal
+
 *
 	border: none
 	outline: none
@@ -10,3 +16,363 @@ html, body
 	box-sizing: border-box
 	&:focus
 		outline: none
+
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+
+p
+	line-height: 1.56
+
+h1, h2, h3, h4, h5, h6
+	font-family: inherit
+
+strong
+	font-weight: bold
+
+.site-wrapper
+	display: flex
+	flex-direction: column
+	height: 100%
+	min-width: 320px
+
+.main-presentation
+	background: url("http://placehold.it/1920x750") no-repeat top
+	min-height: 750px
+	position: relative
+	//&::after
+	//	position: absolute
+	//	content: 'SOROS 2.0'
+	//	opacity: 0.14
+	//	font-size: 230px
+	//	font-weight: bold
+	//	color: rgba(247, 248, 250, 0.39)
+	//	top: 100%
+	//	text-align: center
+	//	width: 1160px
+	//	left: 50%
+	//	transform: translate(-50%, -80%)
+
+.container
+	max-width: 1200px
+	padding: 0 30px
+	margin: 0 auto
+
+.presentation-header
+	background-color: $white
+	padding: 17px 30px
+	display: flex
+	justify-content: space-between
+	max-width: 1170px
+	margin: 0 auto 70px
+
+.logo
+	display: flex
+	align-items: center
+	margin-right: 30px
+
+.logo__link
+	display: flex
+	align-items: center
+
+
+.logo__title
+	font-size: 22px
+	font-weight: 800
+	letter-spacing: 1px
+	color: #1b1d27
+	text-transform: uppercase
+
+.logo__img-wrapper
+	margin-right: 13px
+	width: 27px
+	position: relative
+
+.communication
+	display: flex
+	align-items: center
+	flex-grow: 1
+	justify-content: flex-end
+
+.contacts
+	display: flex
+	flex-direction: column
+
+.call-button
+	display: flex
+	align-items: center
+	justify-content: center
+	color: $red
+	border: 1px solid $red
+	min-height: 40px
+	padding: 0 10px
+	border-radius: 3px
+	max-width: 180px
+	width: 100%
+	margin-right: 28px
+	flex-shrink: 0
+
+.contacts
+	flex-shrink: 0
+
+.contacts__phone-wrapper
+	display: flex
+	align-items: center
+	min-width: 235px
+
+.fri-phone
+	margin-right: 10px
+
+.contacts__phone
+	font-size: 26px
+	font-weight: bold
+	color: #323333
+
+.contacts__subtext
+	font-size: 14px
+	color: #999999
+	text-align: right
+
+.presentation-descr
+	max-width: 670px
+
+.presentation-descr__title
+	font-size: 65px
+	font-weight: 800
+	color: $white
+	text-transform: uppercase
+
+.presentation-descr__subtitle
+	font-size: 35px
+	font-weight: 300
+	color: $white
+	line-height: 1
+
+.presentation-descr__text
+	font-size: 20px
+	line-height: 1.5
+	color: $white
+
+.download-button
+	position: relative
+	min-height: 50px
+	min-width: 400px
+	background-color: $red
+	padding: 0 20px
+	display: inline-flex
+	align-items: center
+	justify-content: space-between
+	cursor: pointer
+	+transition(all 0.3s ease)
+	&:hover
+		box-shadow: inset 0 0 1000px rgba(#fff, 0.3)
+	&::after
+		position: absolute
+		content: ''
+		top: 50%
+		transform: translateY(-50%)
+		right: 60px
+		height: 60%
+		border-right: 1px solid rgba($white, 0.5)
+		
+.download-button_black-blue
+	background-color: $black-blue
+
+
+.download-button__text
+	position: relative
+	margin-right: 40px
+	font-size: 18px
+	font-weight: 800
+	color: $white
+	text-transform: uppercase
+	max-width: 320px
+
+.timer__wrapper
+	width: 590px
+	border-radius: 15px
+	background-color: #f7f8fa
+	border: solid 2px $red
+	padding: 20px 15px
+
+.timer
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	
+.timer__title
+	font-size: 16px
+	font-weight: 600
+	line-height: 1.25
+	color: #323333
+	margin-bottom: 8px
+
+.watch
+	display: flex
+
+.watch__item
+	position: relative
+	display: flex
+	flex-direction: column
+	justify-content: center
+	margin-right: 20px
+	flex-grow: 1
+	flex-shrink: 0
+
+.watch__item_divide
+	font-family: "Roboto", sans-serif
+	font-size: 45px
+	font-weight: 500
+	color: #000
+	margin-right: 20px
+	padding-top: 5px
+	align-self: flex-start
+
+.watch__item-count
+	font-family: "Roboto", sans-serif
+	font-size: 55px
+	color: #1b1d27
+	text-align: center
+	
+.watch__item-name
+	font-size: 14px
+	font-weight: 300
+	color: #323333
+	text-align: center
+
+.presentation-footer
+	padding: 33px 0
+
+.presentation-footer_bg-red
+	background-color: $red
+
+.presentation-footer-grid
+	display: flex
+	align-items: center
+
+.presentation-footer-grid__title
+	position: relative
+	font-size: 32px
+	font-weight: 800
+	line-height: 1.25
+	color: $white
+	padding-right: 43px
+	text-align: right
+	text-transform: uppercase
+	max-width: 337px
+	width: 100%
+	margin-right: 20px
+	&::after
+		position: absolute
+		content: ''
+		top: 0
+		right: 0
+		height: 100%
+		border-right: 2px solid $white
+
+.presentation-footer-grid__descr
+	font-size: 18px
+	font-style: italic
+	line-height: 1.67
+	color: $white
+
+.section
+	padding: 70px 0
+
+.section_description
+	padding-top: 68px
+	padding-bottom: 157px
+	background-color: #f7f8fa
+
+.figure
+	position: relative
+	padding: 21px 15px 29px 32px
+	width: 235px
+	height: 350px
+	margin-right: 55px
+	flex-shrink: 0
+	&::after
+		position: absolute
+		content: ''
+		background-color: $red
+		width: 123px
+		height: 60px
+		right: -123px
+		top: 0
+
+.figure_red
+	background-color: $red
+	&::after
+		background-color: $red
+
+.figure__small-text
+	font-size: 16px
+	color: $white
+	margin-bottom: 95px
+	text-transform: uppercase
+
+.figure__large-text
+	font-size: 32px
+	font-weight: 800
+	line-height: 1.41
+	color: $white
+	text-transform: uppercase
+
+.soros-description
+	display: flex
+
+.soros-description__text
+	padding-top: 112px
+	max-width: 785px
+
+.soros-text-p
+	padding-left: 5px
+	opacity: 0.7
+	letter-spacing: 0.6px
+	color: #1b1d27
+
+.soros-description__gray-text
+	color: #b6b8b7
+	font-size: 14px
+	line-height: 1.79
+	padding-left: 0
+
+.section__title
+	font-size: 32px
+	font-weight: 800
+	line-height: 1.41
+	color: $black-blue
+	text-transform: uppercase
+
+.text-center
+	text-align: center
+
+.solutions
+	display: flex
+
+.solutions__item-left, .solutions__item-right
+	flex-basis: 0
+	flex-grow: 1
+	flex-shrink: 0
+
+.solutions__item-right
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	padding: 50px 20px 45px
+	background-color: $black-blue
+
+.solutions__percents
+	font-size: 80px
+	font-weight: 600
+	color: $white
+	margin-bottom: 23px
+
+.solutions__item-text
+	font-size: 18px
+	font-style: italic
+	line-height: 1.39
+	color: $white
