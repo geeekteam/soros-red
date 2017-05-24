@@ -38,9 +38,10 @@ strong
 	min-width: 320px
 
 .main-presentation
-	background: url("http://placehold.it/1920x750") no-repeat top
+	background: url("../images/main-presentation.jpg") no-repeat top
 	min-height: 750px
 	position: relative
+	background-size: cover
 	//&::after
 	//	position: absolute
 	//	content: 'SOROS 2.0'
@@ -56,7 +57,7 @@ strong
 
 .container
 	max-width: 1200px
-	padding: 0 30px
+	padding: 0 25px
 	margin: 0 auto
 
 .presentation-header
@@ -115,6 +116,9 @@ strong
 
 .contacts
 	flex-shrink: 0
+
+.contacts_footer
+	margin-left: auto
 
 .contacts__phone-wrapper
 	display: flex
@@ -178,6 +182,14 @@ strong
 		
 .download-button_black-blue
 	background-color: $black-blue
+
+.download-button_white
+	background-color: $white
+	border: 1px solid $red
+	&::after
+		border-color: $red
+	.download-button__text
+		color: $red
 
 
 .download-button__text
@@ -280,18 +292,27 @@ strong
 
 .section
 	padding: 70px 0
+	
+.section_periwinkle-krajol
+	background-color: #F7F8FA
 
 .section_description
 	padding-top: 68px
-	padding-bottom: 157px
-	background-color: #f7f8fa
+	padding-bottom: 160px
+	
+.section_bg-red-banner
+	background: url("../images/section_bg-red-banner.jpg") no-repeat top
+	background-size: cover
+
+.section_bg-try-it
+	background: url("../images/section_bg-try-it.jpg") no-repeat top
+	background-size: cover
 
 .figure
 	position: relative
 	padding: 21px 15px 29px 32px
 	width: 235px
 	height: 350px
-	margin-right: 55px
 	flex-shrink: 0
 	&::after
 		position: absolute
@@ -320,20 +341,21 @@ strong
 	color: $white
 	text-transform: uppercase
 
-.soros-description
+.box-with-figure
 	display: flex
 
-.soros-description__text
-	padding-top: 112px
-	max-width: 785px
+.box-with-figure__content
+	background-color: $white
+	padding: 40px
 
-.soros-text-p
+.text-p
 	padding-left: 5px
 	opacity: 0.7
-	letter-spacing: 0.6px
 	color: #1b1d27
+	line-height: 1.56
+	font-size: 16px
 
-.soros-description__gray-text
+.box-with-figure__gray-text
 	color: #b6b8b7
 	font-size: 14px
 	line-height: 1.79
@@ -346,33 +368,136 @@ strong
 	color: $black-blue
 	text-transform: uppercase
 
+.section__title_white
+	line-height: 1.56
+
+.section__subtitle
+	font-size: 24px
+	font-weight: 800
+	line-height: 1.46
+	color: $black-blue
+	text-transform: uppercase
+
+
 .text-center
 	text-align: center
 
-.solutions
+.grid-2
 	display: flex
 
-.solutions__item-left, .solutions__item-right
+.grid-2__item-left, .grid-2__item-right
 	flex-basis: 0
 	flex-grow: 1
 	flex-shrink: 0
+	max-width: 555px
 
-.solutions__item-right
+.grid-2__item-right
 	display: flex
 	flex-direction: column
 	justify-content: center
 	align-items: center
-	padding: 50px 20px 45px
+	padding: 20px 35px 45px
 	background-color: $black-blue
+	max-width: 555px
+	flex-basis: 0
+	flex-grow: 1
+	flex-shrink: 0
 
-.solutions__percents
+.grid-2__item-right_img
+	padding: 0
+	background-color: transparent
+	align-items: flex-start
+	justify-content: flex-start
+
+.grid-2__percents
 	font-size: 80px
 	font-weight: 600
 	color: $white
-	margin-bottom: 23px
 
-.solutions__item-text
+.grid-2__item-text
+	text-align: center
 	font-size: 18px
 	font-style: italic
 	line-height: 1.39
 	color: $white
+
+.table
+	width: 825px
+	display: flex
+	flex-direction: column
+
+.table__row
+	display: flex
+	text-align: center
+	padding: 12px 0 8px
+	align-items: center
+
+.table__header
+	background-color: #1b1d27
+	font-size: 14px
+	line-height: 1.43
+	color: $white
+
+.table__body
+	font-size: 20px
+	line-height: 1
+	color: #1b1d27
+
+.table__row_body
+	padding: 21px 0 19px
+
+.table__cell-1
+	padding: 0 10px
+	width: 300px
+
+.table__cell-2
+	padding: 0 10px
+	width: 140px
+
+.table__cell-3
+	padding: 0 10px
+	width: 145px
+
+.table__cell-4
+	width: 125px
+	padding: 0 10px
+
+.table__cell-5
+	padding: 0 10px
+	flex-grow: 1
+	flex-shrink: 0
+	flex-basis: 0
+
+.grid
+	display: flex
+	align-items: flex-start
+
+.grid_footer
+	justify-content: space-between
+	padding: 0 20px
+	.grid__item
+		padding: 0
+		align-items: flex-start
+		justify-content: flex-start
+		flex-shrink: 1
+
+.grid__item
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	padding: 0 20px
+	flex-grow: 1
+	flex-shrink: 0
+	flex-basis: 0
+
+.grid__advantages-text
+	font-size: 22px
+	line-height: 1.36
+	color: $black-blue
+
+.centered
+	margin: 0 auto
+
+.section-footer
+	padding: 30px 0
