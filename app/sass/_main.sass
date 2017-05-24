@@ -37,9 +37,9 @@ strong
 	height: 100%
 	min-width: 320px
 
+
 .main-presentation
 	background: url("../images/main-presentation.jpg") no-repeat top
-	min-height: 750px
 	position: relative
 	background-size: cover
 	//&::after
@@ -68,10 +68,14 @@ strong
 	max-width: 1170px
 	margin: 0 auto 70px
 
+.presentation-body
+	padding-bottom: 57px
+
 .logo
 	display: flex
 	align-items: center
 	margin-right: 30px
+	flex-shrink: 0
 
 .logo__link
 	display: flex
@@ -95,6 +99,7 @@ strong
 	align-items: center
 	flex-grow: 1
 	justify-content: flex-end
+	flex-wrap: wrap
 
 .contacts
 	display: flex
@@ -179,6 +184,9 @@ strong
 		right: 60px
 		height: 60%
 		border-right: 1px solid rgba($white, 0.5)
+
+.fri-download
+	flex-shrink: 0
 		
 .download-button_black-blue
 	background-color: $black-blue
@@ -190,7 +198,6 @@ strong
 		border-color: $red
 	.download-button__text
 		color: $red
-
 
 .download-button__text
 	position: relative
@@ -421,6 +428,9 @@ strong
 	line-height: 1.39
 	color: $white
 
+.table-wrapper
+	overflow-x: auto
+
 .table
 	width: 825px
 	display: flex
@@ -470,16 +480,6 @@ strong
 
 .grid
 	display: flex
-	align-items: flex-start
-
-.grid_footer
-	justify-content: space-between
-	padding: 0 20px
-	.grid__item
-		padding: 0
-		align-items: flex-start
-		justify-content: flex-start
-		flex-shrink: 1
 
 .grid__item
 	display: flex
@@ -491,7 +491,30 @@ strong
 	flex-shrink: 0
 	flex-basis: 0
 
-.grid__advantages-text
+.grid-4
+	display: flex
+	align-items: flex-start
+
+.grid_footer
+	justify-content: space-between
+	padding: 0 20px
+	.grid__item
+		padding: 0
+		align-items: flex-start
+		justify-content: flex-start
+		flex-shrink: 1
+
+.grid-4__item
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	padding: 0 20px
+	flex-grow: 1
+	flex-shrink: 0
+	flex-basis: 0
+
+.grid-4__advantages-text
 	font-size: 22px
 	line-height: 1.36
 	color: $black-blue
