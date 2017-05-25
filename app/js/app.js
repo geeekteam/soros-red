@@ -317,9 +317,10 @@
         // DOM is loaded! Paste your app code here (Pure JS code).
         // Do not use jQuery here cause external libs do not loads here...
 
-        app.initSwitcher(); // data-switcher="{target='anything'}" , data-switcher-target="anything"
+        // app.initSwitcher(); // data-switcher="{target='anything'}" , data-switcher-target="anything"
         app.timer('2017-05-30', true);
 
+        app.popups();
     });
 
     app.appLoad('full', function (e) {

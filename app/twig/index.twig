@@ -17,7 +17,7 @@
                     </a>
                 </div>
                 <div class="communication">
-                    <span class="call-button">Перезвоните мне</span>
+                    <span class="call-button js-open-popup" data-open-popup="call-me">Перезвоните мне</span>
                     <div class="contacts">
                         <div class="contacts__phone-wrapper">
                             <i class="fri fri-phone"></i>
@@ -310,6 +310,17 @@
                 </div>
             </div>
         </section>
+        <div class="popup-wrapper js-popup" data-popup="call-me">
+            <div class="call-me">
+                <form action="" class="call-me__form">
+                    <input class="call-me__input mb20" type="text" placeholder="Введите имя">
+                    <input class="call-me__input mb20" type="text" placeholder="Введите телефон">
+                    <p class="text-center">
+                        <button class="call-me__button" type="submit">Отправить</button>
+                    </p>
+                </form>
+            </div>
+        </div>
     </div>
 
 {% endblock %}

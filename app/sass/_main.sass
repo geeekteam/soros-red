@@ -22,6 +22,14 @@ a
 	&:hover
 		text-decoration: none
 
+button
+	background: none
+	outline: none
+	border: none
+	&:focus
+		outline: none
+		border: none
+
 p
 	line-height: 1.56
 
@@ -118,6 +126,12 @@ strong
 	width: 100%
 	margin-right: 28px
 	flex-shrink: 0
+	cursor: pointer
+	+transition(all 0.3s ease)
+	&:hover
+		color: $white
+		background-color: $red
+		border-color: $white
 
 .contacts
 	flex-shrink: 0
@@ -198,6 +212,12 @@ strong
 		border-color: $red
 	.download-button__text
 		color: $red
+	&:hover
+		background-color: $red
+		.download-button__text
+			color: $white
+		&::after
+			border-color: $white
 
 .download-button__text
 	position: relative
@@ -524,3 +544,63 @@ strong
 
 .section-footer
 	padding: 30px 0
+
+.popup-wrapper
+	top: 0
+	left: 0
+	display: inline-flex
+	height: 100%
+	width: 100%
+	position: fixed
+	z-index: 100
+	background-color: rgba(0,0,0, 0.3)
+	visibility: hidden
+	opacity: 0
+	align-items: center
+	+transition(all 0.3s ease)
+	overflow: hidden
+	&.opened
+		visibility: visible
+		opacity: 1
+		.call-me
+			transform: perspective(800px) rotateX(0deg)
+
+.call-me
+	position: relative
+	padding: 55px 25px 25px
+	max-width: 500px
+	width: 90%
+	background-color: $white
+	margin: 0 auto
+	border-radius: 15px
+	border: 2px solid $black-blue
+	transform: perspective(800px) rotateX(90deg)
+	+transition(all 0.3s ease)
+
+.call-me__form
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+.call-me__input
+	font-size: 16px
+	border-bottom: 1px solid $wet-asphalt
+	font-style: italic
+
+.call-me__button
+	max-width: 200px
+	width: 100%
+	min-height: 35px
+	padding: 0 10px
+	background-color: $white
+	border: 1px solid $black-blue
+	border-radius: 5px
+	color: $black-blue
+	font-size: 16px
+	text-transform: uppercase
+	cursor: pointer
+	+transition(all 0.3s ease)
+	&:hover
+		background-color: $black-blue
+		color: $white
+		border-color: $black-blue
