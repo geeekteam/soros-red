@@ -938,10 +938,10 @@ strong {
   padding: 55px 25px 25px;
   max-width: 500px;
   width: 90%;
-  background-color: #ffffff;
+  background-color: #F7F8FA;
   margin: 0 auto;
   border-radius: 15px;
-  border: 2px solid #1B1D27;
+  border: 1px solid #1B1D27;
   transform: perspective(800px) rotateX(90deg);
   transition: all 0.3s ease;
 }
@@ -956,7 +956,7 @@ strong {
 }
 
 .call-me__input {
-  font-size: 16px;
+  font-size: 18px;
   border-bottom: 1px solid #474747;
   font-style: italic;
 }
@@ -970,7 +970,7 @@ strong {
   border: 1px solid #1B1D27;
   border-radius: 5px;
   color: #1B1D27;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
