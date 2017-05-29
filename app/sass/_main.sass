@@ -196,9 +196,8 @@ strong
 	align-items: center
 	justify-content: space-between
 	cursor: pointer
+	border: 1px solid $red
 	+transition(all 0.3s ease)
-	&:hover
-		box-shadow: inset 0 0 1000px rgba(#fff, 0.3)
 	&::after
 		position: absolute
 		content: ''
@@ -207,12 +206,25 @@ strong
 		right: 60px
 		height: 60%
 		border-right: 1px solid rgba($white, 0.5)
+	&:hover
+		background-color: $white
+		.download-button__text
+			color: $red
+		&::after
+			border-right: 1px solid $red
 
 .fri-download, .fri-download-red, .fri-download-blue
 	flex-shrink: 0
 		
 .download-button_black-blue
 	background-color: $black-blue
+	border: 1px solid $black-blue
+	&:hover
+		background-color: $white
+		.download-button__text
+			color: $black-blue
+		&::after
+			border-right: 1px solid $black-blue
 
 .download-button_white
 	background-color: $white

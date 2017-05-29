@@ -60,9 +60,11 @@
 
 	.table__row_body
 		padding: 0
-		margin-bottom: 30px
+		margin-bottom: 20px
 		&:last-child
 			margin-bottom: 0
+	.box-with-figure__content
+		background-color: transparent
 
 	.table__body
 		[data-label]
@@ -70,17 +72,21 @@
 			display: flex
 			flex-direction: column
 			position: relative
-			margin-bottom: 10px
 			font-size: 18px
-			border-bottom: 1px solid $black-blue
+			border-bottom: 1px solid #aaaaaa
 			padding-bottom: 10px
+			padding-top: 10px
+			&:nth-child(odd)
+				background-color: #e2e2e2
 			&:nth-last-child(2)
 				margin-bottom: 0
 				padding-bottom: 0
 				border-bottom: none
+				background-color: transparent
 			&:last-child
-				border-bottom: 1px solid $black-blue
+				border-bottom: none
 				flex-basis: 100%
+				background-color: transparent
 			&:before
 				font-size: 16px
 				flex-basis: 100%
@@ -90,7 +96,7 @@
 				position: relative
 				content: attr(data-label)
 				width: 100%
-				color: #b6b8b7
+				color: #9ea09f
 				font-style: italic
 				text-align: left
 
