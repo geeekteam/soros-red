@@ -57,6 +57,8 @@
 	.table__row
 		flex-direction: column
 		text-align: left
+		&:nth-child(odd)
+			background-color: #eeeeee
 
 	.table__row_body
 		padding: 0
@@ -73,11 +75,10 @@
 			flex-direction: column
 			position: relative
 			font-size: 18px
-			border-bottom: 1px solid #aaaaaa
 			padding-bottom: 10px
 			padding-top: 10px
-			&:nth-child(odd)
-				background-color: #e2e2e2
+			border-bottom: 1px solid #ccc
+
 			&:nth-last-child(2)
 				margin-bottom: 0
 				padding-bottom: 0
