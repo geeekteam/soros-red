@@ -1,5 +1,4 @@
 {% extends "layouts/app.twig" %}
-
 {% block pageTitle %}Главная страница{% endblock %}
 
 {% block content %}
@@ -312,11 +311,13 @@
         </section>
         <div class="popup-wrapper js-popup" data-popup="call-me">
             <div class="call-me">
+                <div class="call-me__close call-me__close_blue js-close-popup"></div>
+                <div class="fz24 text-center mb20">Заказать <span class="text-blue">бесплатный</span> звонок</div>
                 <form action="" class="call-me__form">
                     <input class="call-me__input mb20" type="text" placeholder="Введите имя">
                     <input class="call-me__input mb20" type="text" placeholder="Введите телефон">
-                    <p class="text-center">
-                        <button class="call-me__button" type="submit">Отправить</button>
+                    <p class="centered">
+                        <button class="call-button call-button_blue" type="submit">Отправить</button>
                     </p>
                 </form>
             </div>

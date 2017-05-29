@@ -127,6 +127,7 @@ strong
 	margin-right: 28px
 	flex-shrink: 0
 	cursor: pointer
+	font-size: 15px
 	+transition(all 0.3s ease)
 	&:hover
 		color: $white
@@ -470,6 +471,8 @@ strong
 	background-color: transparent
 	align-items: flex-start
 	justify-content: flex-start
+	img
+		width: 100%
 
 .grid-2__percents
 	font-size: 80px
@@ -612,33 +615,100 @@ strong
 	transform: perspective(800px) rotateX(90deg)
 	+transition(all 0.3s ease)
 
+.call-me__close
+	position: absolute
+	cursor: pointer
+	top: -10px
+	right: -5px
+	border-radius: 50%
+	height: 25px
+	width: 25px
+	background-color: #fff
+	+transition(all 0.3s ease)
+	&::after
+		position: absolute
+		content: ''
+		width: 20px
+		height: 2px
+		border-radius: 2px
+		top: 10px
+		right: 1px
+		transform: rotate(-45deg)
+	&::before
+		position: absolute
+		content: ''
+		width: 20px
+		height: 2px
+		border-radius: 2px
+		top: 10px
+		right: 1px
+		transform: rotate(45deg)
+
+.call-me__close_red
+	border: 1px solid $red
+	&::after
+		background-color: $red
+	&::before
+		background-color: $red
+	&:hover
+		background-color: $red
+		&::after
+			background-color: $white
+		&::before
+			background-color: $white
+
+.call-me__close_blue
+	border: 1px solid $blue
+	&::after
+		background-color: $blue
+	&::before
+		background-color: $blue
+	&:hover
+		background-color: $blue
+		&::after
+			background-color: $white
+		&::before
+			background-color: $white
+
 .call-me__form
 	display: flex
 	flex-direction: column
 	justify-content: center
 
 .call-me__input
-	font-size: 18px
-	border-bottom: 1px solid $wet-asphalt
-	font-style: italic
+	font-size: 17px
+	height: 30px
+	padding: 0 10px
+	border: 1px solid #b6b8b7
 
 .call-me__button
 	max-width: 200px
 	width: 100%
 	min-height: 35px
 	padding: 0 10px
-	background-color: $white
-	border: 1px solid $black-blue
 	border-radius: 5px
-	color: $black-blue
 	font-size: 18px
 	text-transform: uppercase
 	cursor: pointer
 	+transition(all 0.3s ease)
+
+.call-me__button_red
+	background-color: $white
+	border: 1px solid $red
+	color: $red
 	&:hover
-		background-color: $black-blue
+		background-color: $red
 		color: $white
-		border-color: $black-blue
+		border-color: $red
+
+.call-me__button_blue
+	background-color: $white
+	border: 1px solid $blue
+	color: $blue
+	&:hover
+		background-color: $blue
+		color: $white
+		border-color: $blue
 		
 .blue-bg
 	background-color: $blue
