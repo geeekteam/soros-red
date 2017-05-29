@@ -317,7 +317,7 @@
         // Do not use jQuery here cause external libs do not loads here...
 
         // app.initSwitcher(); // data-switcher="{target='anything'}" , data-switcher-target="anything"
-        app.timer('2017-05-30', true);
+        app.timer('2017-12-31', true);
 
         app.popups();
     });
