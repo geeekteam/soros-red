@@ -46,6 +46,51 @@
 	.section_description
 		padding: 30px 0
 
+	.table__header
+		display: none
+
+	.box-with-figure_1180
+		.table
+			min-width: 0
+			margin-bottom: 30px
+
+	.table__row
+		flex-direction: column
+		text-align: left
+
+	.table__row_body
+		padding: 0
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
+
+	.table__body
+		[data-label]
+			width: 100%
+			display: flex
+			flex-direction: column
+			position: relative
+			margin-bottom: 10px
+			font-size: 18px
+			border-bottom: 1px solid $black-blue
+			padding-bottom: 10px
+			&:nth-last-child(2)
+				border-bottom: none
+				padding-bottom: 0
+				margin-bottom: 0
+			&:before
+				font-size: 16px
+				flex-basis: 100%
+				margin-bottom: 10px
+				flex-grow: 1
+				flex-shrink: 0
+				position: relative
+				content: attr(data-label)
+				width: 100%
+				color: #b6b8b7
+				font-style: italic
+				text-align: left
+
 @media screen and (max-width: 767px)
 
 	.presentation-header
@@ -181,6 +226,9 @@
 
 	.mob-pr0
 		padding-right: 0
+
+	.mob-pt0
+		padding-top: 0
 
 	.grid_footer
 		flex-direction: column
