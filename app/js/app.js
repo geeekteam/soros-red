@@ -285,11 +285,10 @@
                     hoursSpan = timer.getElementsByClassName('js-hours')[0],
                     minutesSpan = timer.getElementsByClassName('js-minutes')[0],
                     secondsSpan = timer.getElementsByClassName('js-seconds')[0];
-
-                if(daysSpan !== undefined) daysSpan.innerHTML = t.days;
-                if(hoursSpan !== undefined) hoursSpan.innerHTML = t.hours;
-                if(minutesSpan !== undefined) minutesSpan.innerHTML = t.minutes;
-                if(secondsSpan !== undefined) secondsSpan.innerHTML = t.seconds;
+                if(daysSpan !== undefined) daysSpan.innerHTML = ((''+t.days).length > 1) ? t.days : '0'+t.days;
+                if(hoursSpan !== undefined) hoursSpan.innerHTML = ((''+t.hours).length > 1) ? t.hours : '0'+t.hours;
+                if(minutesSpan !== undefined) minutesSpan.innerHTML = ((''+t.minutes).length > 1) ? t.minutes : '0'+t.minutes;
+                if(secondsSpan !== undefined) secondsSpan.innerHTML =((''+t.seconds).length > 1) ? t.seconds : '0'+t.seconds;
 
                 if (t.total <= 0)
                     clearInterval(timerBody.timerInterval);
