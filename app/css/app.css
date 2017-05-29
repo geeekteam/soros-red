@@ -388,6 +388,46 @@
   }
 }
 
+.download-button_blac-blue-hover:hover .fri-download {
+  background-image: url('../images/icons-s7690ea6898.png');
+  background-position: 0 -367px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  width: 18px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .download-button_blac-blue-hover:hover .fri-download {
+    background-image: url('../images/icons-2x-s5b05c88998.png');
+    background-size: 80px auto;
+    background-position: 0 -355px;
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.download-button_blue-bg:hover .fri-download {
+  background-image: url('../images/icons-s7690ea6898.png');
+  background-position: 0 -344px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  width: 18px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .download-button_blue-bg:hover .fri-download {
+    background-image: url('../images/icons-2x-s5b05c88998.png');
+    background-size: 80px auto;
+    background-position: 0 -334px;
+    height: 18px;
+    width: 18px;
+  }
+}
+
 html, body {
   margin: 0;
   height: 100%;
@@ -673,6 +713,34 @@ strong {
 }
 .download-button_black-blue:hover::after {
   border-right: 1px solid #1B1D27;
+}
+
+.download-button_blue-bg {
+  background-color: #00afe4;
+  border: 1px solid #00afe4;
+}
+.download-button_blue-bg:hover {
+  background-color: #ffffff;
+}
+.download-button_blue-bg:hover .download-button__text {
+  color: #00afe4;
+}
+.download-button_blue-bg:hover::after {
+  border-right: 1px solid #00afe4;
+}
+
+.download-button_blue {
+  background-color: #00afe4;
+  border: 1px solid #00afe4;
+}
+.download-button_blue:hover {
+  background-color: #ffffff;
+}
+.download-button_blue:hover .download-button__text {
+  color: #00afe4;
+}
+.download-button_blue:hover::after {
+  border-right: 1px solid #00afe4;
 }
 
 .download-button_white {
