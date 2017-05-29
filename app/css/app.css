@@ -1131,9 +1131,16 @@ strong {
   background-color: #F7F8FA;
   margin: 0 auto;
   border-radius: 15px;
-  border: 1px solid #1B1D27;
   transform: perspective(800px) rotateX(90deg);
   transition: all 0.3s ease;
+}
+
+.call-me_red {
+  border: 1px solid #ff0101;
+}
+
+.call-me_blue {
+  border: 1px solid #00afe4;
 }
 
 .call-me__close {
@@ -1572,8 +1579,16 @@ strong {
     margin: 0 -25px 0 -25px;
   }
 
+  .table-wrapper {
+    margin: 0 -25px 0 -25px;
+  }
+
   .mob-figure-dark {
     background-color: #474747;
+  }
+
+  .mob-fz20 {
+    font-size: 20px;
   }
 
   .figure_red {
