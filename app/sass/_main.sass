@@ -133,6 +133,14 @@ strong
 		background-color: $red
 		border-color: $white
 
+.call-button_blue
+	color: $blue
+	border-color: $blue
+	&:hover
+		color: $white
+		background-color: $blue
+		border-color: $white
+
 .contacts
 	flex-shrink: 0
 
@@ -219,6 +227,21 @@ strong
 		&::after
 			border-color: $white
 
+.download-button_blue
+	background-color: $white
+	border: 1px solid $blue
+	&::after
+		border-color: $blue
+	.download-button__text
+		color: $blue
+	&:hover
+		background-color: $blue
+		.download-button__text
+			color: $white
+		&::after
+			border-color: $white
+
+
 .download-button__text
 	position: relative
 	margin-right: 40px
@@ -287,6 +310,9 @@ strong
 .presentation-footer_bg-red
 	background-color: $red
 
+.presentation-footer_bg-blue
+	background-color: $blue
+
 .presentation-footer-grid
 	display: flex
 	align-items: center
@@ -331,6 +357,10 @@ strong
 	background: url("../images/section_bg-red-banner.jpg") no-repeat top
 	background-size: cover
 
+.section_bg-blue-banner
+	background: url("../images/section_bg-blue-banner.jpg") no-repeat top
+	background-size: cover
+
 .section_bg-try-it
 	background: url("../images/section_bg-try-it.jpg") no-repeat top
 	background-size: cover
@@ -354,6 +384,11 @@ strong
 	background-color: $red
 	&::after
 		background-color: $red
+
+.figure_blue
+	background-color: $blue
+	&::after
+		background-color: $blue
 
 .figure__small-text
 	font-size: 16px
@@ -604,3 +639,12 @@ strong
 		background-color: $black-blue
 		color: $white
 		border-color: $black-blue
+		
+.blue-bg
+	background-color: $blue
+
+.text-blue
+	color: $blue
+
+.blue-border
+	border-color: $blue

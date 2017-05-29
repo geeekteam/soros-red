@@ -9,8 +9,8 @@
 }
 
 .fri-logo {
-  background-image: url('../images/icons-s5e30bfc286.png');
-  background-position: 0 -295px;
+  background-image: url('../images/icons-sca8070774f.png');
+  background-position: 0 -596px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -20,17 +20,37 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .fri-logo {
-    background-image: url('../images/icons-2x-s4be9dae762.png');
+    background-image: url('../images/icons-2x-s6886a06785.png');
     background-size: 80px auto;
-    background-position: 0 -283px;
+    background-position: 0 -571px;
+    height: 24px;
+    width: 27px;
+  }
+}
+
+.fri-logo-blue {
+  background-image: url('../images/icons-sca8070774f.png');
+  background-position: 0 -567px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 24px;
+  width: 27px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .fri-logo-blue {
+    background-image: url('../images/icons-2x-s6886a06785.png');
+    background-size: 80px auto;
+    background-position: 0 -545px;
     height: 24px;
     width: 27px;
   }
 }
 
 .fri-phone {
-  background-image: url('../images/icons-s5e30bfc286.png');
-  background-position: 0 -324px;
+  background-image: url('../images/icons-sca8070774f.png');
+  background-position: 0 -625px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -40,17 +60,17 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .fri-phone {
-    background-image: url('../images/icons-2x-s4be9dae762.png');
+    background-image: url('../images/icons-2x-s6886a06785.png');
     background-size: 80px auto;
-    background-position: 0 -309px;
+    background-position: 0 -598px;
     height: 16px;
     width: 16px;
   }
 }
 
 .fri-download {
-  background-image: url('../images/icons-s5e30bfc286.png');
-  background-position: 0 -195px;
+  background-image: url('../images/icons-sca8070774f.png');
+  background-position: 0 -390px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -60,17 +80,17 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .fri-download {
-    background-image: url('../images/icons-2x-s4be9dae762.png');
+    background-image: url('../images/icons-2x-s6886a06785.png');
     background-size: 80px auto;
-    background-position: 0 -188px;
+    background-position: 0 -375px;
     height: 18px;
     width: 18px;
   }
 }
 
 .fri-download-red {
-  background-image: url('../images/icons-s5e30bfc286.png');
-  background-position: 0 -172px;
+  background-image: url('../images/icons-sca8070774f.png');
+  background-position: 0 -367px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -80,17 +100,37 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .fri-download-red {
-    background-image: url('../images/icons-2x-s4be9dae762.png');
+    background-image: url('../images/icons-2x-s6886a06785.png');
     background-size: 80px auto;
-    background-position: 0 -167px;
+    background-position: 0 -355px;
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.fri-download-blue {
+  background-image: url('../images/icons-sca8070774f.png');
+  background-position: 0 -344px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  width: 18px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .fri-download-blue {
+    background-image: url('../images/icons-2x-s6886a06785.png');
+    background-size: 80px auto;
+    background-position: 0 -334px;
     height: 18px;
     width: 18px;
   }
 }
 
 .fri-interface {
-  background-image: url('../images/icons-s5e30bfc286.png');
-  background-position: 0 -218px;
+  background-image: url('../images/icons-sca8070774f.png');
+  background-position: 0 -490px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -100,17 +140,37 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .fri-interface {
-    background-image: url('../images/icons-2x-s4be9dae762.png');
+    background-image: url('../images/icons-2x-s6886a06785.png');
     background-size: 80px auto;
-    background-position: 0 -208px;
+    background-position: 0 -470px;
+    height: 72px;
+    width: 80px;
+  }
+}
+
+.fri-interface-blue {
+  background-image: url('../images/icons-sca8070774f.png');
+  background-position: 0 -413px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 72px;
+  width: 80px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .fri-interface-blue {
+    background-image: url('../images/icons-2x-s6886a06785.png');
+    background-size: 80px auto;
+    background-position: 0 -396px;
     height: 72px;
     width: 80px;
   }
 }
 
 .fri-control {
-  background-image: url('../images/icons-s5e30bfc286.png');
-  background-position: 0 -85px;
+  background-image: url('../images/icons-sca8070774f.png');
+  background-position: 0 -257px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -120,17 +180,37 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .fri-control {
-    background-image: url('../images/icons-2x-s4be9dae762.png');
+    background-image: url('../images/icons-2x-s6886a06785.png');
     background-size: 80px auto;
-    background-position: 0 -83px;
+    background-position: 0 -250px;
+    height: 82px;
+    width: 80px;
+  }
+}
+
+.fri-control-blue {
+  background-image: url('../images/icons-sca8070774f.png');
+  background-position: 0 -170px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 82px;
+  width: 80px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .fri-control-blue {
+    background-image: url('../images/icons-2x-s6886a06785.png');
+    background-size: 80px auto;
+    background-position: 0 -165px;
     height: 82px;
     width: 80px;
   }
 }
 
 .fri-support {
-  background-image: url('../images/icons-s5e30bfc286.png');
-  background-position: 0 -429px;
+  background-image: url('../images/icons-sca8070774f.png');
+  background-position: 0 -815px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -140,17 +220,37 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .fri-support {
-    background-image: url('../images/icons-2x-s4be9dae762.png');
+    background-image: url('../images/icons-2x-s6886a06785.png');
     background-size: 80px auto;
-    background-position: 0 -409px;
+    background-position: 0 -780px;
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.fri-support-blue {
+  background-image: url('../images/icons-sca8070774f.png');
+  background-position: 0 -730px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 80px;
+  width: 80px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .fri-support-blue {
+    background-image: url('../images/icons-2x-s6886a06785.png');
+    background-size: 80px auto;
+    background-position: 0 -697px;
     height: 80px;
     width: 80px;
   }
 }
 
 .fri-consulting {
-  background-image: url('../images/icons-s5e30bfc286.png');
-  background-position: 0 0;
+  background-image: url('../images/icons-sca8070774f.png');
+  background-position: 0 -85px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -160,7 +260,27 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .fri-consulting {
-    background-image: url('../images/icons-2x-s4be9dae762.png');
+    background-image: url('../images/icons-2x-s6886a06785.png');
+    background-size: 80px auto;
+    background-position: 0 -83px;
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.fri-consulting-blue {
+  background-image: url('../images/icons-sca8070774f.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 80px;
+  width: 80px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .fri-consulting-blue {
+    background-image: url('../images/icons-2x-s6886a06785.png');
     background-size: 80px auto;
     background-position: 0 0;
     height: 80px;
@@ -169,8 +289,8 @@
 }
 
 .download-button_white:hover .fri-download-red {
-  background-image: url('../images/icons-s5e30bfc286.png');
-  background-position: 0 -195px;
+  background-image: url('../images/icons-sca8070774f.png');
+  background-position: 0 -390px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -180,9 +300,29 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .download-button_white:hover .fri-download-red {
-    background-image: url('../images/icons-2x-s4be9dae762.png');
+    background-image: url('../images/icons-2x-s6886a06785.png');
     background-size: 80px auto;
-    background-position: 0 -188px;
+    background-position: 0 -375px;
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.download-button_blue:hover .fri-download-blue {
+  background-image: url('../images/icons-sca8070774f.png');
+  background-position: 0 -390px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  width: 18px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .download-button_blue:hover .fri-download-blue {
+    background-image: url('../images/icons-2x-s6886a06785.png');
+    background-size: 80px auto;
+    background-position: 0 -375px;
     height: 18px;
     width: 18px;
   }
@@ -353,6 +493,16 @@ strong {
   border-color: #ffffff;
 }
 
+.call-button_blue {
+  color: #00afe4;
+  border-color: #00afe4;
+}
+.call-button_blue:hover {
+  color: #ffffff;
+  background-color: #00afe4;
+  border-color: #ffffff;
+}
+
 .contacts {
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -467,6 +617,26 @@ strong {
   border-color: #ffffff;
 }
 
+.download-button_blue {
+  background-color: #ffffff;
+  border: 1px solid #00afe4;
+}
+.download-button_blue::after {
+  border-color: #00afe4;
+}
+.download-button_blue .download-button__text {
+  color: #00afe4;
+}
+.download-button_blue:hover {
+  background-color: #00afe4;
+}
+.download-button_blue:hover .download-button__text {
+  color: #ffffff;
+}
+.download-button_blue:hover::after {
+  border-color: #ffffff;
+}
+
 .download-button__text {
   position: relative;
   margin-right: 40px;
@@ -557,6 +727,10 @@ strong {
   background-color: #ff0101;
 }
 
+.presentation-footer_bg-blue {
+  background-color: #00afe4;
+}
+
 .presentation-footer-grid {
   display: -ms-flexbox;
   display: flex;
@@ -611,6 +785,11 @@ strong {
   background-size: cover;
 }
 
+.section_bg-blue-banner {
+  background: url("../images/section_bg-blue-banner.jpg") no-repeat top;
+  background-size: cover;
+}
+
 .section_bg-try-it {
   background: url("../images/section_bg-try-it.jpg") no-repeat top;
   background-size: cover;
@@ -639,6 +818,13 @@ strong {
 }
 .figure_red::after {
   background-color: #ff0101;
+}
+
+.figure_blue {
+  background-color: #00afe4;
+}
+.figure_blue::after {
+  background-color: #00afe4;
 }
 
 .figure__small-text {
@@ -979,6 +1165,18 @@ strong {
   background-color: #1B1D27;
   color: #ffffff;
   border-color: #1B1D27;
+}
+
+.blue-bg {
+  background-color: #00afe4;
+}
+
+.text-blue {
+  color: #00afe4;
+}
+
+.blue-border {
+  border-color: #00afe4;
 }
 
 .fz18 {
