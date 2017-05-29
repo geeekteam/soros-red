@@ -1532,9 +1532,14 @@ strong {
     padding-bottom: 10px;
   }
   .table__body [data-label]:nth-last-child(2) {
-    border-bottom: none;
-    padding-bottom: 0;
     margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .table__body [data-label]:last-child {
+    border-bottom: 1px solid #1B1D27;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
   }
   .table__body [data-label]:before {
     font-size: 16px;
