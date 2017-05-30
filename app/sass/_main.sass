@@ -51,8 +51,8 @@ strong
 	min-width: 320px
 
 
-.main-presentation
-	background: url("../images/main-presentation.jpg") no-repeat top
+.main-presentation_bg
+	background: url("../images/main-presentation.jpg") no-repeat bottom
 	position: relative
 	background-size: cover
 
@@ -444,16 +444,17 @@ strong
 	position: relative
 	&::after
 		position: absolute
-		content: 'Soros 2.0'
+		content: "Soros 2.0"
 		font-size: 260px
 		font-weight: bold
 		color: #1b1d27
 		opacity: 0.02
-		top: 70%
+		bottom: -160px
 		text-align: center
-		width: 1160px
+		max-width: 1160px
 		left: 50%
 		transform: translateX(-50%)
+		width: 100%
 
 .box-with-figure__content
 	background-color: $white
