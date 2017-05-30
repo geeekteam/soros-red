@@ -50,18 +50,6 @@ strong
 	background: url("../images/main-presentation.jpg") no-repeat top
 	position: relative
 	background-size: cover
-	//&::after
-	//	position: absolute
-	//	content: 'SOROS 2.0'
-	//	opacity: 0.14
-	//	font-size: 230px
-	//	font-weight: bold
-	//	color: rgba(247, 248, 250, 0.39)
-	//	top: 100%
-	//	text-align: center
-	//	width: 1160px
-	//	left: 50%
-	//	transform: translate(-50%, -80%)
 
 .container
 	max-width: 1200px
@@ -107,7 +95,6 @@ strong
 	align-items: center
 	flex-grow: 1
 	justify-content: flex-end
-	flex-wrap: wrap
 
 .contacts
 	display: flex
@@ -317,6 +304,8 @@ strong
 	margin-right: 20px
 	flex-grow: 1
 	flex-shrink: 0
+	&:last-child
+		margin-right: 0
 
 .watch__item_divide
 	font-family: "Roboto", sans-serif
@@ -440,10 +429,27 @@ strong
 
 .box-with-figure
 	display: flex
+	position: relative
+
+.soros
+	position: relative
+	&::after
+		position: absolute
+		content: 'Soros 2.0'
+		font-size: 260px
+		font-weight: bold
+		color: #1b1d27
+		opacity: 0.02
+		top: 70%
+		text-align: center
+		width: 1160px
+		left: 50%
+		transform: translateX(-50%)
 
 .box-with-figure__content
 	background-color: $white
 	padding: 40px
+	z-index: 10
 
 .text-p
 	padding-left: 5px
@@ -547,6 +553,8 @@ strong
 
 .table__row_body
 	padding: 21px 0 19px
+	&:nth-child(odd)
+		background-color: #f7f8fa
 
 .table__cell-1
 	padding: 0 10px
@@ -757,3 +765,6 @@ strong
 
 .blue-border
 	border-color: $blue
+	
+.bg-gray
+	background-color: #f5f7f8
