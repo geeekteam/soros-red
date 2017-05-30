@@ -185,7 +185,7 @@
         plugin.openPopup = function (popupName) {
             plugin.reachPopups.filter('[data-popup="' + popupName + '"]').addClass('opened');
             plugin.bodyEl.css('overflow-y', 'scroll');
-            plugin.topPanelEl.css('padding-right', scrollSettings.width);
+            // plugin.topPanelEl.css('padding-right', scrollSettings.width);
             plugin.htmlEl.addClass('popup-opened');
         };
 

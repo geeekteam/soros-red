@@ -432,12 +432,19 @@ html, body {
   margin: 0;
   height: 100%;
 }
+html .popup-opened, body .popup-opened {
+  overflow: hidden;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
+}
+
+html.popup-opened {
+  overflow: hidden;
 }
 
 * {
@@ -566,8 +573,8 @@ strong {
 }
 
 .call-button {
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
@@ -590,6 +597,11 @@ strong {
   color: #ffffff;
   background-color: #ff0101;
   border-color: #ffffff;
+}
+
+.call-button_popup {
+  min-width: 180px;
+  margin-right: 0;
 }
 
 .call-button_blue {
@@ -1290,7 +1302,16 @@ strong {
   opacity: 1;
 }
 .popup-wrapper.opened .call-me {
-  transform: perspective(800px) rotateX(0deg);
+  transform: perspective(500px) rotateX(0deg);
+}
+
+.popup-opened body::after {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .call-me {
@@ -1301,7 +1322,7 @@ strong {
   background-color: #F7F8FA;
   margin: 0 auto;
   border-radius: 15px;
-  transform: perspective(800px) rotateX(90deg);
+  transform: perspective(0px) rotateX(90deg);
   transition: all 0.3s ease;
 }
 
@@ -1551,6 +1572,10 @@ strong {
 
 .mb65 {
   margin-bottom: 65px;
+}
+
+.mr0 {
+  margin-right: 0;
 }
 
 .mr30 {

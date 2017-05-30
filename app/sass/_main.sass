@@ -1,6 +1,8 @@
 html, body
 	margin: 0
 	height: 100%
+	.popup-opened
+		overflow: hidden
 
 body
 	font-family: "Open Sans", sans-serif
@@ -8,6 +10,9 @@ body
 	font-weight: normal
 	font-style: normal
 
+html
+	&.popup-opened
+		overflow: hidden
 *
 	border: none
 	outline: none
@@ -101,7 +106,7 @@ strong
 	flex-direction: column
 
 .call-button
-	display: flex
+	display: inline-flex
 	align-items: center
 	justify-content: center
 	color: $red
@@ -120,6 +125,10 @@ strong
 		color: $white
 		background-color: $red
 		border-color: $white
+
+.call-button_popup
+	min-width: 180px
+	margin-right: 0
 
 .call-button_blue
 	color: $blue
@@ -643,7 +652,17 @@ strong
 		visibility: visible
 		opacity: 1
 		.call-me
-			transform: perspective(800px) rotateX(0deg)
+			transform: perspective(500px) rotateX(0deg)
+
+.popup-opened
+	body
+		&::after
+			position: fixed
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			z-index: 100
 
 .call-me
 	position: relative
@@ -653,7 +672,7 @@ strong
 	background-color: #F7F8FA
 	margin: 0 auto
 	border-radius: 15px
-	transform: perspective(800px) rotateX(90deg)
+	transform: perspective(0px) rotateX(90deg)
 	+transition(all 0.3s ease)
 
 .call-me_red
