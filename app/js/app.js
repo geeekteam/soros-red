@@ -331,9 +331,9 @@
                 todayDay = new Date().getDate(),
                 todayMonth = new Date().getMonth(),
                 todayYear = new Date().getFullYear();
-            if (todayDay < 9)
+            if (todayDay < 10)
                 todayDay = '0' + todayDay;
-            if (todayMonth < 9)
+            if (todayMonth < 10)
                 todayMonth = '0' + todayMonth;
             var todaySlash = todayDay+'/'+todayMonth+'/'+todayYear,
                 today = todayDay+'.'+todayMonth+'.'+todayYear;
