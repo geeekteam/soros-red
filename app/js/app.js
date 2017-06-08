@@ -329,16 +329,33 @@
             var todayDate = $('.js-today'),
                 todayDateSlash = $('.js-today-slash-divider'),
                 todayDay = new Date().getDate(),
-                todayMonth = new Date().getMonth(),
+                todayMonth = new Date().getMonth() + 1,
                 todayYear = new Date().getFullYear();
+
             if (todayDay < 10)
                 todayDay = '0' + todayDay;
             if (todayMonth < 10)
                 todayMonth = '0' + todayMonth;
-            var todaySlash = todayDay+'/'+todayMonth+'/'+todayYear,
-                today = todayDay+'.'+todayMonth+'.'+todayYear;
-            todayDateSlash.html(todaySlash);
+            var todaySlash = todayDay + '/' + todayMonth + '/' + todayYear,
+                today = todayDay + '.' + todayMonth + '.' + todayYear;
             todayDate.html(today);
+
+            todayDateSlash.each(function () {
+                var pastDate = new Date(),
+                    minusDays = parseInt($(this).attr('minus-days'));
+                pastDate = new Date(pastDate.setDate(pastDate.getDate() - minusDays));
+                var pastDay = pastDate.getDate(),
+                    pastMonth = pastDate.getMonth() + 1,
+                    pastYear = pastDate.getFullYear();
+                if (pastDay < 10)
+                    pastDay = '0' + pastDay;
+                if (pastMonth < 10)
+                    pastMonth = '0' + pastMonth;
+
+                var pastSlash = pastDay + '/' + pastMonth + '/' + pastYear;
+                $(this).html(pastSlash + ' — ' + todaySlash);
+            })
+
         }
 
         function todayDataLabelDay() {
