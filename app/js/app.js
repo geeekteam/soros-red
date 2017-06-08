@@ -314,7 +314,7 @@
         function nextDate() {
             var nextDateSpan = $('.js-next-day'),
                 today = new Date(),
-                addDays = parseInt(nextDateSpan.attr('add-days')),
+                addDays = parseInt(nextDateSpan.attr('data-add-days')),
                 monthNames = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"
                 ];
 
@@ -342,7 +342,7 @@
 
             todayDateSlash.each(function () {
                 var pastDate = new Date(),
-                    minusDays = parseInt($(this).attr('minus-days'));
+                    minusDays = parseInt($(this).attr('data-minus-days'));
                 pastDate = new Date(pastDate.setDate(pastDate.getDate() - minusDays));
                 var pastDay = pastDate.getDate(),
                     pastMonth = pastDate.getMonth() + 1,
@@ -362,7 +362,7 @@
                 options = {
                     year: 'numeric',
                     month: 'numeric',
-                    day: 'numeric',
+                    day: 'numeric'
                 },
                 today = new Date().toLocaleString("ru", options);
 
