@@ -248,11 +248,11 @@
     };
 
 
-    YOURAPPNAME.prototype.timer = function(expirationDate, startNow) {
+    YOURAPPNAME.prototype.timer = function (expirationDate, startNow) {
         var _self = this,
             timerBody = {};
 
-        if(expirationDate === undefined) return console.error('Expects a expirationData/ Example: 2017-05-30 (typeof string)');
+        if (expirationDate === undefined) return console.error('Expects a expirationData/ Example: 2017-05-30 (typeof string)');
 
         timerBody.options = {
             expirationDate: expirationDate
@@ -279,16 +279,16 @@
         timerBody.render = function () {
             var t = timerBody.calculate();
 
-            for(var i=timerBody.timers.length-1; i >= 0; --i) {
+            for (var i = timerBody.timers.length - 1; i >= 0; --i) {
                 var timer = timerBody.timers[i],
                     daysSpan = timer.getElementsByClassName('js-days')[0],
                     hoursSpan = timer.getElementsByClassName('js-hours')[0],
                     minutesSpan = timer.getElementsByClassName('js-minutes')[0],
                     secondsSpan = timer.getElementsByClassName('js-seconds')[0];
-                if(daysSpan !== undefined) daysSpan.innerHTML = ((''+t.days).length > 1) ? t.days : '0'+t.days;
-                if(hoursSpan !== undefined) hoursSpan.innerHTML = ((''+t.hours).length > 1) ? t.hours : '0'+t.hours;
-                if(minutesSpan !== undefined) minutesSpan.innerHTML = ((''+t.minutes).length > 1) ? t.minutes : '0'+t.minutes;
-                if(secondsSpan !== undefined) secondsSpan.innerHTML =((''+t.seconds).length > 1) ? t.seconds : '0'+t.seconds;
+                if (daysSpan !== undefined) daysSpan.innerHTML = (('' + t.days).length > 1) ? t.days : '0' + t.days;
+                if (hoursSpan !== undefined) hoursSpan.innerHTML = (('' + t.hours).length > 1) ? t.hours : '0' + t.hours;
+                if (minutesSpan !== undefined) minutesSpan.innerHTML = (('' + t.minutes).length > 1) ? t.minutes : '0' + t.minutes;
+                if (secondsSpan !== undefined) secondsSpan.innerHTML = (('' + t.seconds).length > 1) ? t.seconds : '0' + t.seconds;
 
                 if (t.total <= 0)
                     clearInterval(timerBody.timerInterval);
@@ -300,7 +300,7 @@
             timerBody.timerInterval = setInterval(timerBody.render, 1000);
         };
 
-        if(startNow !== undefined && startNow) timerBody.init();
+        if (startNow !== undefined && startNow) timerBody.init();
 
         return timerBody;
     };
@@ -310,6 +310,51 @@
 
     app.appLoad('loading', function () {
         // App is loading... Paste your app code here. 4example u can run preloader event here and stop it in action appLoad dom or full
+
+        function nextDate() {
+            var nextDateSpan = $('.js-next-day'),
+                today = new Date(),
+                addDays = parseInt(nextDateSpan.attr('add-days')),
+                monthNames = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"
+                ];
+
+            console.log();
+
+            nextDateSpan.html((today.getDate() + addDays) + ' ' + monthNames[today.getMonth()] + '!');
+        }
+
+        nextDate();
+
+        function todayDate() {
+            var todayDate = $('.js-today'),
+                todayDateSlash = $('.js-today-slash-divider'),
+                todayDay = new Date().getDate(),
+                todayMonth = new Date().getMonth(),
+                todayYear = new Date().getFullYear();
+            if (todayDay < 9)
+                todayDay = '0' + todayDay;
+            if (todayMonth < 9)
+                todayMonth = '0' + todayMonth;
+            var todaySlash = todayDay+'/'+todayMonth+'/'+todayYear,
+                today = todayDay+'.'+todayMonth+'.'+todayYear;
+            todayDateSlash.html(todaySlash);
+            todayDate.html(today);
+        }
+
+        function todayDataLabelDay() {
+            var todayDate = $('.js-data-label-today'),
+                options = {
+                    year: 'numeric',
+                    month: 'numeric',
+                    day: 'numeric',
+                },
+                today = new Date().toLocaleString("ru", options);
+
+            todayDate.attr('data-label', "На " + today);
+        }
+
+        todayDate();
+        todayDataLabelDay()
     });
 
     app.appLoad('dom', function () {

@@ -1,0 +1,103 @@
+<div class="popup-wrapper js-popup" data-popup="call-me">
+    <div class="call-me call-me_red">
+        <div class="popup__close popup__close_red js-close-popup"></div>
+        <div class="fz24 mob-fz20 text-center mb20">Заказать <span class="text-red">бесплатный</span> звонок</div>
+        <form action="" class="popup__form">
+            <input class="popup__input popup__input_red mb20" type="text" placeholder="Введите имя">
+            <input class="popup__input popup__input_red mb20" type="text" placeholder="Введите телефон">
+            <p class="text-center">
+                <button class="call-button call-button_popup" type="submit">Отправить</button>
+            </p>
+        </form>
+    </div>
+</div>
+
+<div class="popup-wrapper js-popup" data-popup="call-me-blue">
+    <div class="call-me call-me_blue">
+        <div class="popup__close popup__close_blue js-close-popup"></div>
+        <div class="fz24 mob-fz20 text-center mb20">Заказать <span class="text-blue">бесплатный</span> звонок</div>
+        <form action="" class="popup__form">
+            <input class="popup__input mb20" type="text" placeholder="Введите имя">
+            <input class="popup__input mb20" type="text" placeholder="Введите телефон">
+            <p class="centered">
+                <button class="call-button call-button_blue call-button_popup" type="submit">Отправить</button>
+            </p>
+        </form>
+    </div>
+</div>
+
+<div class="popup-wrapper js-popup" data-popup="download-red">
+    <div class="download-popup download-popup_red">
+        <div class="popup__close popup__close_red js-close-popup"></div>
+        <div class="fz24 mob-fz20 text-center mb10">Оставьте свои контактные данные и мы вышлем ссылку на скачивание</div>
+        <p class="popup-error-message active mb20">Для отправки сообщения требуется SMS подтверждение</p>
+        <form action="" class="popup__form">
+            <input class="popup__input mb20" type="text" placeholder="Введите имя">
+            <input class="popup__input mb20" type="text" placeholder="Введите телефон">
+            <input class="popup__input mb20" type="text" placeholder="Введите e-mail">
+            <p class="centered">
+                <button class="call-button call-button_red call-button_popup js-change-popup" data-closing-popup="download-red" data-opening-popup="sms-red" type="button">Отправить</button>
+            </p>
+        </form>
+    </div>
+</div>
+
+<div class="popup-wrapper js-popup" data-popup="download-blue">
+    <div class="download-popup download-popup_blue">
+        <div class="popup__close popup__close_blue js-close-popup"></div>
+        <div class="fz24 mob-fz20 text-center mb10">Оставьте свои контактные данные и мы вышлем ссылку на скачивание</div>
+        <p class="popup-error-message active mb20">Для отправки сообщения требуется SMS подтверждение</p>
+        <form action="" class="popup__form">
+            <input class="popup__input mb20" type="text" placeholder="Введите имя">
+            <input class="popup__input mb20" type="text" placeholder="Введите телефон">
+            <input class="popup__input mb20" type="text" placeholder="Введите e-mail">
+            <p class="centered">
+                <button class="call-button call-button_blue call-button_popup js-change-popup" data-closing-popup="download-blue" data-opening-popup="sms-blue" type="button">Отправить</button>
+            </p>
+        </form>
+    </div>
+</div>
+
+<div class="popup-wrapper js-popup" data-popup="sms-red">
+    <div class="sms-popup sms-popup_red">
+        <div class="popup__close popup__close_red js-close-popup"></div>
+        <div class="fz24 mob-fz20 text-center mb10">Подтверждение заявки по SMS</div>
+        <p class="popup-error-message active mb20">Проверьте правильность ввода номера телефона</p>
+        <p class="popup-success-message active mb20">Код подтверждения был успешно отправлен</p>
+        <form action="" class="popup__form">
+            <label class="input-col mb20">
+                <span class="fz14 mb5">Мобильный телефон*</span>
+                <input class="popup__input " type="text">
+            </label>
+            <label class="input-col popup__input_small mb20">
+                <span class="fz14 mb5">SMS код подтверждения*</span>
+                <input class="popup__input " type="text">
+            </label>
+            <p class="centered">
+                <button class="call-button call-button_red call-button_popup js-change-popup" data-closing-popup="download-red" data-opening-popup="sms-red" type="submit">Отправить</button>
+            </p>
+        </form>
+    </div>
+</div>
+
+<div class="popup-wrapper js-popup" data-popup="sms-blue">
+    <div class="sms-popup sms-popup_blue">
+        <div class="popup__close popup__close_blue js-close-popup"></div>
+        <div class="fz24 mob-fz20 text-center mb10">Подтверждение заявки по SMS</div>
+        <p class="popup-error-message active mb20">Проверьте правильность ввода номера телефона</p>
+        <p class="popup-success-message active mb20">Код подтверждения был успешно отправлен</p>
+        <form action="" class="popup__form">
+            <label class="input-col mb20">
+                <span class="fz14 mb5">Мобильный телефон*</span>
+                <input class="popup__input " type="text">
+            </label>
+            <label class="input-col popup__input_small mb20">
+                <span class="fz14 mb5">SMS код подтверждения*</span>
+                <input class="popup__input " type="text">
+            </label>
+            <p class="centered">
+                <button class="call-button call-button_blue call-button_popup js-change-popup" data-closing-popup="download-red" data-opening-popup="sms-red" type="submit">Отправить</button>
+            </p>
+        </form>
+    </div>
+</div>
