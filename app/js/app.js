@@ -355,7 +355,6 @@
                 var pastSlash = pastDay + '/' + pastMonth + '/' + pastYear;
                 $(this).html(pastSlash + ' — ' + todaySlash);
             })
-
         }
 
         function todayDataLabelDay() {
